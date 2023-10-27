@@ -5,6 +5,8 @@ import App from './App';
 import authReducer from "./state/stateMangament"
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+import './i18n';
+
 const store = configureStore({
   reducer: authReducer
 })
