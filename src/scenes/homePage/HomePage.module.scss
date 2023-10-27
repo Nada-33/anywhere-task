@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.theBody {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.secound{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.theExamBody{
+    margin-top: 7%;
+    width: 100%;
+}
+
+.announcement{
+    width: 70%;
+}
+.list {
+    width: 30%;
+}
+@media (max-width: 768px) {
+    .secound{
+        display: flex;
+        flex-direction: column;
+    }
+    .announcement{
+        width: 100%;
+    }
+    .list {
+        width: 100%;
+    }
+}  

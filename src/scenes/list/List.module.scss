@@ -1,0 +1,83 @@
+.list {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+
+}
+
+.titleFont {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.titleMargin {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 30%;
+
+}
+
+.rigth {
+    width: 70%;
+}
+
+.last {
+    width: 100%;
+}
+
+.mybtn {
+    padding: 0.2rem;
+    background-color: hsl(252, 30%, 95%);
+    color: blue;
+    width: 90%;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 3px solid blue;
+}
+
+.mybtn:hover {
+    background-color: #0055dd;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 5px rgba(0, 85, 255, 0.5)
+}
+
+.myHr {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .list {
+        padding: 0.5rem;
+    }
+
+    .titleFont {
+        font-size: 1.5em;
+    }
+
+    .left {
+        width: 40%;
+
+    }
+
+    .rigth {
+        width: 60%;
+    }
+
+
+    .mybtn {
+        width: 100%;
+    }
+}

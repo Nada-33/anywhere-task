@@ -1,0 +1,109 @@
+.sidebar {
+    background-color: blue;
+    color: #fff;
+    width: 20%;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu {
+            margin-left: 1rem;
+            font-size: 0.8rem;
+        }
+
+
+    }
+
+    .navList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-grow: 1;
+
+        li {
+            padding: 0.5rem;
+            border-bottom: 1px solid #555;
+            margin-top: 2rem;
+
+
+
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+
+                .myIcon {
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+
+                .linkName {
+                    font-size: 2rem;
+                }
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background-color: #555;
+            }
+        }
+    }
+
+    &.open {
+        width: 100%;
+    }
+
+    h3.hidden {
+        display: none;
+    }
+
+    .showNavList {
+        display: block;
+    }
+
+    @media screen and (min-width: 868px) {
+        .logoName {
+            display: block;
+        }
+
+        .myIcon {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 867px) {
+        .logoName {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+
+
+        .linkName {
+            display: none;
+        }
+
+    }
+
+
+}
